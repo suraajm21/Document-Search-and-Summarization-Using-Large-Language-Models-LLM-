@@ -19,17 +19,3 @@ Key features include an interactive **Streamlit UI** (bonus) and a rigorous **Ev
 * **Evaluation Suite:** Automatically generates synthetic queries from mid-document chunks to test **Recall@K** and **ROUGE-1/ROUGE-L** scores.
 
 ---
-
-## 📂 Repository Structure
-
-```plaintext
-.
-├── data/
-│   └── processed/
-│       └── corpus.json              # Generated corpus (after running preprocess.py)
-├── engine.py                        # Core RAG Logic (FAISS + BM25 + Ollama connection)
-├── preprocess.py                    # Corpus builder (Loader + Cleaner + Chunker)
-├── app.py                           # Streamlit Web UI
-├── evaluate.py                      # Evaluation script (Recall & ROUGE metrics)
-├── evaluation_results.csv           # Log file generated after evaluation
-└── README.md                        # Project documentation
